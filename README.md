@@ -1,6 +1,8 @@
-# Which ML Model for Detecting QoE Degradation in Low-Latency Applications: Cloud-Gaming Case Study
+# ML Models for Detecting QoE Degradation in Low-Latency Applications: A Cloud-Gaming Case Study
 
-This repository contains the code of the different unsupervised machine learning algorithms implemented in the paper to detect anomalies in Cloud Gaming Sessions.
+This repository contains the code of the different unsupervised machine learning algorithms implemented in the paper to detect anomalies in Cloud Gaming Sessions. The paper was accepted at the Special Issue on Robust and Reliable Networks of the Future in [IEEE Transactions on Network and Service Management](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4275028).
+
+DOI: [ML Models for Detecting QoE Degradation in Low-Latency Applications: A Cloud-Gaming Case Study](https://doi.org/10.1109/TNSM.2023.3293806)
 
 The models implemented are :
 - [Isolation Forest](https://ieeexplore.ieee.org/document/4781136)
@@ -12,9 +14,6 @@ The models implemented are :
 - [DAGMM](https://openreview.net/forum?id=BJJLHbb0-)
 - [USAD](https://dl.acm.org/doi/pdf/10.1145/3394486.3403392)
 
-## Disclaimer
-
-The paper is under review at the Special Issue on Robust and Reliable Networks of the Future in IEEE Transactions on Network and Service Management. The repository is for reviewers only and will be publicly available upon paper acceptance.
 
 ## Datasets
 
@@ -156,27 +155,27 @@ python main.py --model-name USAD --contamination-ratio 0.05 --window-size 10 --t
 ├── setup.py
 └── src
     ├── experiments
-    │   ├── data_contamination.py
-    │   └── metric_quality.py
+    │   ├── data_contamination.py
+    │   └── metric_quality.py
     ├── __init__.py
     ├── models
-    │   ├── anomaly_pca.py
-    │   ├── auto_encoder.py
-    │   ├── auto_encoder_utils.py
-    │   ├── beta_detector.py
-    │   ├── dagmm.py
-    │   ├── dagmm_utils.py
-    │   ├── deep_svd.py
-    │   ├── deep_svd_utils.py
-    │   ├── iforest.py
-    │   ├── __init__.py
-    │   ├── lstm_vae.py
-    │   ├── lstm_vae_utils.py
-    │   ├── oc_svm.py
-    │   ├── random_guessing.py
-    │   ├── usad.py
-    │   ├── usad_utils.py
-    │   └── zero_rule.py
+    │   ├── anomaly_pca.py
+    │   ├── auto_encoder.py
+    │   ├── auto_encoder_utils.py
+    │   ├── beta_detector.py
+    │   ├── dagmm.py
+    │   ├── dagmm_utils.py
+    │   ├── deep_svd.py
+    │   ├── deep_svd_utils.py
+    │   ├── iforest.py
+    │   ├── __init__.py
+    │   ├── lstm_vae.py
+    │   ├── lstm_vae_utils.py
+    │   ├── oc_svm.py
+    │   ├── random_guessing.py
+    │   ├── usad.py
+    │   ├── usad_utils.py
+    │   └── zero_rule.py
     └── utils
         ├── algorithm_utils.py
         ├── data_processing.py
